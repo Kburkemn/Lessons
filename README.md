@@ -1,5 +1,5 @@
 # Lessons
-Short examples of learning code
+Short examples of learning coding
 
 
 //Write a loop that gives you the 9's times table,from 9 x 1 = 9 to 9 x 12 = 108.
@@ -42,3 +42,16 @@ console.log(favoriteRecipe.servings);
 for (var i = 0; i < favoriteRecipe.ingredients.length; i++) {
     console.log(favoriteRecipe.ingredients[i]);
 }
+
+//object method
+var favoriteRecipe = {
+    recipeTitle: 'Cookies',
+    servings: 1,
+    ingredients: ['flour', 'sugar', 'eggs'],
+    directions: 'mix and bake',
+    letsCook: function() {
+        console.log('I\'m hungry! Let\'s cook ' + favoriteRecipe.recipeTitle);
+    }
+};
+
+favoriteRecipe.letsCook();
